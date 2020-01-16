@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/back?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  #    type: org.springframework.jdbc.datasource.DelegatingDataSource
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#api.prefix: /api
